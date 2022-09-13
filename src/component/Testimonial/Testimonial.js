@@ -1,14 +1,15 @@
 import React from 'react';
 import ikbal from "../../assets/image/Ikbal 1.png"
+import './Testimonail.css'
 
 const Testimonial = () => {
     return (
-        <div>
-            <p className='text-center'>Testimonial</p>
-            <h3 className='text-center'>What They Say?</h3>
-            <div class="hero min-h-screen bg-white">
-                <div class="hero-content  flex-col lg:flex-row-reverse">
-                    <img src={ikbal} class="max-w-sm rounded-lg shadow-2xl" />
+        <div className='testimonial-bg'>
+            <p className='text-center text-secondary pt-10'>Testimonial</p>
+            <h3 className='text-center font-bold text-3xl pb-8'>What They Say?</h3>
+            <div class="hero ">
+                <div class="hero-content  flex-col lg:flex-row-reverse bg-white">
+                    <img src={ikbal} class="max-w-sm " />
                     <div>
                         <h1 class="">David Jeams</h1>
                         <h1 class="">Pratient</h1>

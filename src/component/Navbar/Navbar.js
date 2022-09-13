@@ -1,9 +1,10 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import './Navbar.css'
 
 const Navbar = () => {
     return (
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100 navbar-bg">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -14,16 +15,16 @@ const Navbar = () => {
                         <li><a>Item 3</a></li>
                     </ul>
                 </div>
-                <a class=" normal-case text-xl text-primary ml-44 w-10" >Doc<span className='text-secondary'>mic.</span> </a>
+                <a class=" normal-case text-xl text-primary ml-44 w-10 font-bold" >Doc<span className='text-secondary'>mic.</span> </a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal p-0">
-                    <li><NavLink to="/">Home</NavLink></li>
-                    <li><NavLink to="/about"> About</NavLink></li>
-                    <li><NavLink to="/department"> Departments</NavLink></li>
-                    <li><NavLink to="/pages"> Pages</NavLink></li>
-                    <li><NavLink to="/blog"> Blog</NavLink></li>
-                    <li><NavLink to="/contacts"> Contacts</NavLink></li>
+                    <li ><Link to="/" >Home</Link></li>
+                    <li><Link to="/about"> About</Link></li>
+                    <li><Link to="/department"> Departments</Link></li>
+                    <li><Link to="/pages"> Pages</Link></li>
+                    <li><Link to="/blog"> Blog</Link></li>
+                    <li><Link to="/contacts"> Contacts</Link></li>
                 </ul>
             </div>
             <button className='btn btn-primary mr-40'>Free Consulation</button>

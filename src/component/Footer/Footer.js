@@ -2,11 +2,12 @@ import React from 'react';
 import { FaFacebook, FaTwitterSquare, FaYoutube } from 'react-icons/fa'
 import { RiInstagramFill } from "react-icons/ri";
 import { AiFillGoogleCircle, AiFillTwitterCircle } from "react-icons/ai";
+import './Footer.css'
 
 const Footer = () => {
     return (
         <div>
-            <footer class="footer p-10  text-base-content">
+            <footer class="footer px-16 pt-20 text-base-content footer-bg">
                 <div>
                     <a class=" normal-case text-xl text-primary w-10 font-bold" >Doc<span className='text-secondary'>mic.</span> </a>
 
